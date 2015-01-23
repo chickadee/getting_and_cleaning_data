@@ -78,7 +78,7 @@ names(y)<-"Activity"
 data<-cbind(y, subject, x_mean_std)
 
 # Write the data to the file
-write.csv(data, "data_tidy.csv", row.names=FALSE) 
+write.table(data, "data_tidy.txt", row.name=FALSE) 
 
 #------------------------------------------------------------------------------
 # STEP 5: From the data set in step 4, create a second, independent tidy data
@@ -94,4 +94,4 @@ result<-aggregate(
 );
 
 # Write the data to the file
-write.csv(result, "data_means.csv", row.names=FALSE) 
+write.table(result, "data_means.txt", row.name=FALSE) 

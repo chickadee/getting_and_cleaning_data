@@ -32,13 +32,13 @@ The script executes following steps:
 1. Merges the training and the test sets to create one data set. Following data files are merged: train/X_train.txt and test/X_test.txt, train/y_train.txt and test/y_test.txt, train/subject_train.txt and test/subject_test.txt.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. This is performed by matching variable names from file features.txt to the columns in the data tables and extracting only the columns that represent mean or standard deviation measurments. 
 3. Uses descriptive activity names from file activity_labels.txt to name the activities in the data set.
-4. Appropriately labels the data set with descriptive variable names from the file features.txt. Labels are further improved by removing unnecessary characters like dashes and replacing "f" and "t" characters with more meaningful "Frequency" and "Time" strings. The resulting tidy data set in stored to the file data_tidy.csv. 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. The resulting dataset in stored to the file data_means.csv. 
+4. Appropriately labels the data set with descriptive variable names from the file features.txt. Labels are further improved by removing unnecessary characters like dashes and replacing "f" and "t" characters with more meaningful "Frequency" and "Time" strings. The resulting tidy data set in stored to the file data_tidy.txt. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. The resulting dataset in stored to the file data_means.txt. 
 
 Resulting data: tidy dataset
 -------------------------------------
-Tidy dataset is stored in the CSV file data_tidy.csv, with comma character used as a value delimiter. First line in a file is used for variable names. String values are embraced in quotes. The first two columns represent activity name and subject identifier. Following 66 columns represent mean and standard deviation measurments extracted from the original dataset. 
+Tidy dataset is stored in the file data_tidy.txt.  
 
 Resulting data: tidy means dataset
 -------------------------------------
-Tidy means dataset is stored in the CSV file data_means.csv, with comma character used as a value delimiter. First line in a file is used for variable names. String values are embraced in quotes. The first two columns represent activity name and subject identifier. Following 66 columns represent calculated averages of the mean and standard deviation measurments for each subject and activity. 
+Tidy means dataset is stored in the file data_means.txt. 
