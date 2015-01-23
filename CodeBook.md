@@ -49,7 +49,7 @@ Both output files have similar structure and values. Both contain following fiel
 * Activity - labels the activity represented by the measurments
 * Subject - uniquely identifies each subject
 
-And following variables trah represent means and standard deviations of the measurments from the original dataset:
+And following variables that represent means and standard deviations of the measurments from the original dataset:
 * TimeBodyAccMeanX
 * TimeBodyAccMeanY
 * TimeBodyAccMeanZ
