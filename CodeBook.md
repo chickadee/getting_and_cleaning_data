@@ -35,10 +35,84 @@ The script executes following steps:
 4. Appropriately labels the data set with descriptive variable names from the file features.txt. Labels are further improved by removing unnecessary characters like dashes and replacing "f" and "t" characters with more meaningful "Frequency" and "Time" strings. The resulting tidy data set in stored to the file data_tidy.txt. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. The resulting dataset in stored to the file data_means.txt. 
 
-Resulting data: tidy dataset
+Output files
 -------------------------------------
 Tidy dataset is stored in the file data_tidy.txt, with space character used as a value delimiter and string values embraced in quotes. The first line in the file is used for variable names. The first two columns represent activity name and subject identifier. Following 66 columns represent mean and standard deviation measurments extracted from the original dataset. 
 
-Resulting data: tidy means dataset
--------------------------------------
 Tidy means dataset is stored in the file data_means.txt, with space character used as a value delimiter and string values embraced in quotes. The first line in the file is used for variable names. The first two columns represent activity name and subject identifier. Following 66 columns represent calculated averages of the mean and standard deviation measurments for each subject and activity. 
+
+Output file format
+-------------------------------------
+
+Both output files have similar structure and values. Both contain following fields:
+
+* Activity - labels the activity represented by the measurments
+* Subject - uniquely identifies each subject
+
+And following variables trah represent means and standard deviations of the measurments from the original dataset:
+* TimeBodyAccMeanX
+* TimeBodyAccMeanY
+* TimeBodyAccMeanZ
+* TimeBodyAccStdDevX
+* TimeBodyAccStdDevY
+* TimeBodyAccStdDevZ
+* TimeGravityAccMeanX
+* TimeGravityAccMeanY
+* TimeGravityAccMeanZ
+* TimeGravityAccStdDevX
+* TimeGravityAccStdDevY
+* TimeGravityAccStdDevZ
+* TimeBodyAccJerkMeanX
+* TimeBodyAccJerkMeanY
+* TimeBodyAccJerkMeanZ
+* TimeBodyAccJerkStdDevX
+* TimeBodyAccJerkStdDevY
+* TimeBodyAccJerkStdDevZ
+* TimeBodyGyroMeanX
+* TimeBodyGyroMeanY
+* TimeBodyGyroMeanZ
+* TimeBodyGyroStdDevX
+* TimeBodyGyroStdDevY
+* TimeBodyGyroStdDevZ
+* TimeBodyGyroJerkMeanX
+* TimeBodyGyroJerkMeanY
+* TimeBodyGyroJerkMeanZ
+* TimeBodyGyroJerkStdDevX
+* TimeBodyGyroJerkStdDevY
+* TimeBodyGyroJerkStdDevZ
+* TimeBodyAccMagMean
+* TimeBodyAccMagStdDev
+* TimeGravityAccMagMean
+* TimeGravityAccMagStdDev
+* TimeBodyAccJerkMagMean
+* TimeBodyAccJerkMagStdDev
+* TimeBodyGyroMagMean
+* TimeBodyGyroMagStdDev
+* TimeBodyGyroJerkMagMean
+* TimeBodyGyroJerkMagStdDev
+* FrequencyBodyAccMeanX
+* FrequencyBodyAccMeanY
+* FrequencyBodyAccMeanZ
+* FrequencyBodyAccStdDevX
+* FrequencyBodyAccStdDevY
+* FrequencyBodyAccStdDevZ
+* FrequencyBodyAccJerkMeanX
+* FrequencyBodyAccJerkMeanY
+* FrequencyBodyAccJerkMeanZ
+* FrequencyBodyAccJerkStdDevX
+* FrequencyBodyAccJerkStdDevY
+* FrequencyBodyAccJerkStdDevZ
+* FrequencyBodyGyroMeanX
+* FrequencyBodyGyroMeanY
+* FrequencyBodyGyroMeanZ
+* FrequencyBodyGyroStdDevX
+* FrequencyBodyGyroStdDevY
+* FrequencyBodyGyroStdDevZ
+* FrequencyBodyAccMagMean
+* FrequencyBodyAccMagStdDev
+* FrequencyBodyAccJerkMagMean
+* FrequencyBodyAccJerkMagStdDev
+* FrequencyBodyGyroMagMean
+* FrequencyBodyGyroMagStdDev
+* FrequencyBodyGyroJerkMagMean
+* FrequencyBodyGyroJerkMagStdDev
