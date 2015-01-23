@@ -37,8 +37,8 @@ The script executes following steps:
 
 Resulting data: tidy dataset
 -------------------------------------
-Tidy dataset is stored in the file data_tidy.txt.  
+Tidy dataset is stored in the file data_tidy.txt, with space character used as a value delimiter and string values embraced in quotes. The first line in the file is used for variable names. The first two columns represent activity name and subject identifier. Following 66 columns represent mean and standard deviation measurments extracted from the original dataset. 
 
 Resulting data: tidy means dataset
 -------------------------------------
-Tidy means dataset is stored in the file data_means.txt. 
+Tidy means dataset is stored in the file data_means.txt, with space character used as a value delimiter and string values embraced in quotes. The first line in the file is used for variable names. The first two columns represent activity name and subject identifier. Following 66 columns represent calculated averages of the mean and standard deviation measurments for each subject and activity. 
